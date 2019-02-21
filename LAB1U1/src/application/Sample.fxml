@@ -8,13 +8,12 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
 <AnchorPane prefHeight="363.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
       <GridPane prefHeight="366.0" prefWidth="534.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="245.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="0.0" prefWidth="289.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="254.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="0.0" prefWidth="280.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints maxHeight="290.0" minHeight="10.0" prefHeight="129.0" vgrow="SOMETIMES" />
@@ -26,14 +25,14 @@
         </rowConstraints>
          <children>
             <Label prefHeight="17.0" prefWidth="201.0" text="   POLYNOMIAL CALCULATOR" />
-            <Label prefHeight="17.0" prefWidth="324.0" text="INSERTA EL POLINOMIO A CALCULAR: " GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="258.0" text="INSERT THE POLYOMY TO CALCULATE:" GridPane.rowIndex="1" />
             <TextField fx:id="input" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#generateQuadratics" text="GENERAR POLINOMIO G^2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#generateQuadratics" text="GENERATE POYINOMIUM(G^2)" GridPane.rowIndex="3" />
             <TextField fx:id="autoGenerate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="LAS RAICES HALLADAS SON: " GridPane.rowIndex="5" />
+            <Label text="THE ROOTS:" GridPane.rowIndex="5" />
             <Label GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="xValue" />
-            <Button layoutX="10.0" layoutY="327.0" mnemonicParsing="false" text="GENERAR POLINOMIO G^N" GridPane.rowIndex="4" />
-            <Button fx:id="solve" layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#solve" text="RESOLVER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button layoutX="10.0" layoutY="327.0" mnemonicParsing="false" text="GENERATE POLYNOMIUM(G^N)" GridPane.rowIndex="4" />
+            <Button fx:id="solve" layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#solve" text="SOLVE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
    </children>
