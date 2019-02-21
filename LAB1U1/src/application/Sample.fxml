@@ -3,6 +3,8 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -10,6 +12,12 @@
 
 <AnchorPane prefHeight="363.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
+      <ImageView fitHeight="366.0" fitWidth="535.0" />
+      <ImageView fitHeight="367.0" fitWidth="544.0">
+         <image>
+            <Image url="@../../image/polynomium%202.jpg" />
+         </image>
+      </ImageView>
       <GridPane prefHeight="366.0" prefWidth="534.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="254.0" />
@@ -24,13 +32,13 @@
             <RowConstraints maxHeight="252.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label prefHeight="17.0" prefWidth="201.0" text="   POLYNOMIAL CALCULATOR" />
-            <Label prefHeight="17.0" prefWidth="258.0" text="INSERT THE POLYOMY TO CALCULATE:" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="201.0" text="   POLYNOMIAL CALCULATOR" textFill="#fcfcfc" />
+            <Label prefHeight="17.0" prefWidth="258.0" text="INSERT THE POLYOMY TO CALCULATE:" textFill="#f2ecec" GridPane.rowIndex="1" />
             <TextField fx:id="input" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Button mnemonicParsing="false" onAction="#generateQuadratics" text="GENERATE POYINOMIUM(G^2)" GridPane.rowIndex="3" />
             <TextField fx:id="autoGenerate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label text="THE ROOTS:" GridPane.rowIndex="5" />
-            <Label GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="xValue" />
+            <Label text="THE ROOTS:" textFill="#fcfcfc" GridPane.rowIndex="5" />
+            <Label textFill="#f8f5f5" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="xValue" />
             <Button layoutX="10.0" layoutY="327.0" mnemonicParsing="false" text="GENERATE POLYNOMIUM(G^N)" GridPane.rowIndex="4" />
             <Button fx:id="solve" layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#solve" text="SOLVE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
